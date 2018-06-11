@@ -1,0 +1,13 @@
+<article class ='personInfo'>
+  <h3>{{person.firstName}} {{person.lastName}}</h3>
+  <h3>{{#link-to "people-list.edit" person class=person.id}}{{person.firstName}}{{person.lastName}}{{/link-to}}</h3>
+  <div class="personFirstName">
+     <span> First name:</span> {{person.firstName}}
+  </div>
+  <div class="personLastName">
+    <span> Last name:</span> {{person.lastName}}
+  </div>
+  <div class="person address">
+    <span> Address: </span> {{person.address}}
+ </div>
+</article>
