@@ -1,13 +1,19 @@
 <div class="jumbo show-listing">
-  <h2> class="firstName"> {{model.firstName}} {{model.lastName}}</h2>
+  <h2 class="firstName"> {{model.firstName}} {{model.lastName}}</h2>
 
+  <form {{action 'updatePerson' on ='submit'}}>
     <div class="person firstName">
-      <strong>First name:</strong>{{model.firstName}}
+      <strong>First name:</strong>{{input type="text" value= model.firstName}}
     </div>
     <div class="person lastName">
-      <strong>Last name:</strong>{{model.lastName}}
+      <strong>Last name:</strong>{{input type="text" value=  model.lastName}}
     </div>
     <div class="address">
-      <strong>Address:</strong>{{model.address}}
+      <strong>Address:</strong>{{input type="text" value= model.address}}
     </div>
+    <div>
+
+      <button type="submit">Update</button>
+    </div>
+  </form>
 </div>

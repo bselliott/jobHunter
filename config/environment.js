@@ -2,6 +2,7 @@
 
 module.exports = function(environment) {
   let ENV = {
+    'ember-cli-mirage': {enabled: true},
     modulePrefix: 'job-hunter',
     environment,
     rootURL: '/',
