@@ -1,0 +1,15 @@
+<form {{action "createPerson" on="submit"}}>
+
+  <div class="person firstName">
+    <strong>First Name:</strong>{{input type="text" value=model.firstName}}
+  </div>
+  <div class="person lastName">
+    <strong>Last Name:</strong>{{input type="text" value=model.lastName}}
+  </div>
+  <div class="address">
+    <strong>Address:</strong>{{input type="text" value= model.address}}
+  </div>
+  <div>
+    <button type="submit">Create</button>
+  </div>
+</form>
