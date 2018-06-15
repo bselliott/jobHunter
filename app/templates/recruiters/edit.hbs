@@ -1,0 +1,18 @@
+<form {{action "editRecruiter" on="submit"}}>
+
+  <div class="recruiter firstName">
+    <strong>First name:</strong>{{input type="text" value=model.firstName}}
+  </div>
+  <div class="recruiter lastName">
+    <strong>Last name:</strong>{{input type="text" value=model.lastName}}
+  </div>
+  <div calss="recruiter address">
+    <strong>Address:</strong>{{input type="text" value=model.address}}
+  </div>
+  <div class= "recruiter person">
+  <strong>Person:</strong>{{model.person.firstName}}
+  </div>
+  <div>
+    <button type= "submit">Update</button>
+  </div>
+</form>
