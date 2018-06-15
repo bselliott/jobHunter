@@ -1,10 +1,10 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  job_type: DS.attr(),
-  job_title:DS.attr(),
-  company_name:DS.attr(),
-  company_address:DS.attr(),
-  job_description:DS.sttr(),
+  jobType: DS.attr(),
+  jobTitle:DS.attr(),
+  companyName:DS.attr(),
+  companyAddress:DS.attr(),
+  jobDescription:DS.attr(),
   person:DS.hasMany('person')
 });

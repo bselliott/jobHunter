@@ -8,8 +8,11 @@
     <div class="person lastName">
       <strong>Last name:</strong>{{input type="text" value=  model.lastName}}
     </div>
-    <div class="address">
+    <div class="person address">
       <strong>Address:</strong>{{input type="text" value= model.address}}
+    </div>
+    <div class="person job">
+      <strong>Job:</strong>{{model.job.jobTitle}}
     </div>
     <div>
       <button type="submit">Update</button>

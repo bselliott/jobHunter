@@ -11,7 +11,11 @@ Router.map(function() {
     this.route('edit', {path: '/:person_id'});
     this.route('create');
   });
-  this.route('jobs');
+  this.route('jobs', function() {
+    this.route('create');
+    this.route('view', {path: ':id/view'});
+    this.route('edit', {path: ':id/edit'});
+  });
 });
 
 export default Router;

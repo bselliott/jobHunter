@@ -1,0 +1,20 @@
+<form {{action "createJob" on="submit"}}>
+  <div class="job jobtype">
+    <strong>Job type:</strong>{{input type="text" value=model.jobType}}
+  </div>
+  <div class="job_title">
+    <strong>Job title:</strong>{{input type="text" value=model.jobTitle}}
+  </div>
+  <div class="companyName">
+    <strong>Company name:</strong>{{input type="text" value=model.companyName}}
+  </div>
+  <div class="companyAddress">
+    <strong>Company address:</strong>{{input type="text" value=model.companyAddress}}
+  </div>
+  <div class="jobDescription">
+    <strong>Job description:</strong>{{input type="text" value=model.jobDescription}}
+  </div>
+  <div>
+    <button type="submit">Create</button>
+  </div>
+</form>
