@@ -12,7 +12,10 @@
       <strong>Address:</strong>{{input type="text" value= model.address}}
     </div>
     <div class="person job">
-      <strong>Job:</strong>{{model.job.jobTitle}}
+      <strong>Job:</strong>{{drop-down model=model jobs=jobs}}
+    </div>
+    <div>
+      <strong>Current job:</strong>{{input type="Null" value= model.job.jobTitle}}
     </div>
     <div>
       <button type="submit">Update</button>

@@ -1,0 +1,6 @@
+<select onchange={{action "setSelection" value="target.value"}}>
+  <option disable selected> --Select your Job -- </option>
+  {{#each jobs as |jobChoice|}}
+      <option value={{jobChoice.id}}>{{jobChoice.jobTitle}}, {{jobChoice.companyName}}</option>
+  {{/each}}
+</select>
