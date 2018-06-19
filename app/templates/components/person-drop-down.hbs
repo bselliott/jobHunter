@@ -1,0 +1,6 @@
+<select multiple="multiple" onchange={{action "makeSelection" value="target.value"}}>
+  <option disable selected> -- Select your Persons -- </option>
+  {{#each person as |personChoice|}}
+  <option value={{personChoice.id}}>{{personChoice.firstName}}, {{personChoice.lastName}}</option>
+  {{/each}}
+</select>
