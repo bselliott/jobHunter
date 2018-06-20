@@ -1,4 +1,7 @@
-<form {{action "updateJob" on="submit"}}> <div class="job jobtype">
+<div class="jumbo show-listing">
+  <h2 class="jobTitle">{{model.jobTitle}}</h2>
+  <form {{action "updateJob" on="submit"}}>
+   <div class="job jobtype">
     <strong>Job type:</strong>{{input type="text" vlaue=model.jobType}}
   </div>
   <div class="jobtitle">
@@ -18,3 +21,4 @@
     <button onclick={{action "deleteJob"}}>Delete</button>
   </div>
 </form>
+</div>

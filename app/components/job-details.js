@@ -10,8 +10,5 @@ export default Component.extend({
       this.get('job').save();
     },
 
-    action2: function(selected) {
-      this.sendAction('action3', selected);
-    }
   }
 });

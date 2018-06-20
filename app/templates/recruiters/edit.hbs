@@ -1,3 +1,5 @@
+<div class="jumbo show-listing">
+  <h2 class=firstName> {{model.firstName}} {{model.lastName}}</h2>
 <form {{action "editRecruiter" on="submit"}}>
 
   <div class="recruiter firstName">
@@ -10,10 +12,12 @@
     <strong>Address:</strong>{{input type="text" value=model.address}}
   </div>
   <div class= "recruiter person">
-    <strong>Person:</strong>{{person-drop-down model=model person=person personList=personList action1=(action "makeSelection" selected=selected) checked=checked}}
+    <strong>Person:</strong>{{person-drop-down model=model person=person personList=personList
+    action1=(action "makeSelection" selected=selected)}}
   </div>
   <div>
     <button type= "submit">Update</button>
     <button onclick={{action "deleteRecruiter"}}>Delete</button>
   </div>
 </form>
+</div>
