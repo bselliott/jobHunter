@@ -10,9 +10,10 @@
     <strong>Address:</strong>{{input type="text" value=model.address}}
   </div>
   <div class= "recruiter person">
-  <strong>Person:</strong>{{person-drop-down model=model person=person}}
+    <strong>Person:</strong>{{person-drop-down model=model person=person personList=personList action1=(action "makeSelection" selected=selected) checked=checked}}
   </div>
   <div>
     <button type= "submit">Update</button>
+    <button onclick={{action "deleteRecruiter"}}>Delete</button>
   </div>
 </form>

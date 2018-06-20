@@ -8,7 +8,14 @@ export default Controller.extend({
 
   actions: {
     updatePerson() {
-      this.get('model').save();
-    }
+      this.get('model').save().then(() => {
+        this.transitionToRoute('people-list');
+      }, () => {}
+      )},
+    deletePerson() {
+      this.get('model').destroyRecord().then(() => {
+        this.transitionToRoute('people-list');
+      }, () => {}
+      )},
   }
 });

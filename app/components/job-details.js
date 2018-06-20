@@ -8,6 +8,10 @@ export default Component.extend({
   actions: {
     updateJob() {
       this.get('job').save();
+    },
+
+    action2: function(selected) {
+      this.sendAction('action3', selected);
     }
   }
 });

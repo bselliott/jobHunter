@@ -1,5 +1,4 @@
-<form {{action "updateJob" on="submit"}}>
-  <div class="job jobtype">
+<form {{action "updateJob" on="submit"}}> <div class="job jobtype">
     <strong>Job type:</strong>{{input type="text" vlaue=model.jobType}}
   </div>
   <div class="jobtitle">
@@ -16,5 +15,6 @@
   </div>
   <div>
     <button type="submit">Update</button>
+    <button onclick={{action "deleteJob"}}>Delete</button>
   </div>
 </form>
