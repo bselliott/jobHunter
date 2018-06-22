@@ -15,8 +15,10 @@ export default Controller.extend({
 
   actions: {
     createJob() {
-    this.get('model').save();
-    }
+      this.get('model').save().then(() => {
+        this.transitionToRoute('jobs');
+      }, () => {}
+    )},
   }
 
     });

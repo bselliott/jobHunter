@@ -4,6 +4,7 @@ module.exports = function(environment) {
   let ENV = {
     'ember-cli-mirage': {enabled: false},
     modulePrefix: 'job-hunter',
+    host: 'localhost.imtapps.com',
     environment,
     rootURL: '/',
     locationType: 'auto',
@@ -25,7 +26,7 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
-    ENV.host = 'http://localhost:8000'
+    ENV.host = 'http://localhost.imtapps.com:8000'
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
@@ -46,7 +47,13 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    // here you can enable a production-specific feature
+    ENV.sentry.dsn = 'https://<client-dsn-key>@sentry.io/<number>';
+    ENV.sentry.development = false;
+  }
+
+  if (environment === 'staging') {
+    ENV.sentry.dsn = 'https://<client-dsn-key>@sentry.io/<number>';
+    ENV.sentry.development = false;
   }
 
   return ENV;

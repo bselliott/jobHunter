@@ -1,25 +1,27 @@
-<div class="jumbo show-listing">
-  <h2 class="firstName"> {{model.firstName}} {{model.lastName}}</h2>
+<div class="ui form">
+  <div class="eight wide field">
+  <h2 class="ui block header"> {{model.firstName}} {{model.lastName}}</h2>
+  </div>
 
   <form {{action 'updatePerson' on ='submit'}}>
-    <div class="person firstName">
+    <div class="five wide field">
       <strong>First name:</strong>{{input type="text" value= model.firstName}}
     </div>
-    <div class="person lastName">
+    <div class="five wide field">
       <strong>Last name:</strong>{{input type="text" value=  model.lastName}}
     </div>
-    <div class="person address">
+    <div class="eight wide field">
       <strong>Address:</strong>{{input type="text" value= model.address}}
     </div>
-    <div class="person job">
+    <div class="eight wide field">
       <strong>Job:</strong>{{drop-down model=model jobs=jobs}}
     </div>
-    <div>
+    <div class= "eight wide field">
       <strong>Current job:</strong>{{input type="Null" value= model.job.jobTitle}}
     </div>
     <div>
-      <button type="submit">Update</button>
-      <button onclick={{action "deletePerson"}}>Delete</button>
+      <button class="ui button" type="submit">Update</button>
+      <button class="ui button" onclick={{action "deletePerson"}}>Delete</button>
     </div>
   </form>
 </div>

@@ -1,0 +1,6 @@
+{
+  "name": "job-hunter",
+  "dependencies": {
+    "semantic-ui": "^2.3.2"
+  }
+}

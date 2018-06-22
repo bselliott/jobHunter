@@ -24,8 +24,10 @@ export default Controller.extend({
       let thing = this.get('model');
       thing.set('person', list);
 
-      this.get('model').save()
-    },
+      this.get('model').save().then(() => {
+        this.transitionToRoute('recruiters');
+      }, () => {}
+    )},
     makeSelection: function(selected){
       selected.toggleProperty('selected');
     },

@@ -1,27 +1,42 @@
-<div class="container">
-  <div class="menu">
-    {{#link-to "index"}}
-      <h1>
-        <em>People list</em>
-      </h1>
-    {{/link-to}}
-    {{#link-to "people-list.create"}}
-      <h1>
-        <em>Create Person</em>
-      </h1>
-    {{/link-to}}
-    {{#link-to "jobs.create"}}
-      <h1>
-        <em>Create Job</em>
-      </h1>
-    {{/link-to}}
-    {{#link-to "recruiters.create"}}
-      <h1>
-        <em>Create Recruiter</em>
-      </h1>
-    {{/link-to}}
-  </div>
-  <div class ="body">
-    {{outlet}}
-  </div>
-</div>
+{{#core-body}}
+  <div class= "ui form">
+
+    <div class="app-nav tablet or lower hidden">
+      <div id='navigation-menu' class="ui horizontal  menu">
+
+        <div class="item">
+          <div class="header"><a href="/">Home</a></div>
+        </div>
+
+        <div class="item">
+          <div class="header"><a href="/people-list">People-list</a></div>
+          <div calss="menu">
+            <a href="/people-list/create" class="item">New Person</a>
+           </div>
+          </div>
+
+        <div class="item">
+          <div calss="header"><a href="/jobs">Jobs</a></div>
+          <div class="menu">
+            <a href="/jobs/create" class="item">New Job</a>
+          </div>
+         </div>
+
+        <div class="item">
+          <div class="header"><a href="/recruiters">Recruiters</a></div>
+          <div class="menu">
+            <a href="/recruiters/create" class="item">New Recruiter</a>
+          </div>
+        </div>
+
+      </div>
+     </div>
+
+         <div class="app-content">
+           {{outlet}}
+         </div>
+        </div>
+
+        {{/core-body}}
+
+

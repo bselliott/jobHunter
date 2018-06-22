@@ -1,18 +1,18 @@
-<form {{action "createPerson" on="submit"}}>
+<form class="ui form" {{action "createPerson" on="submit"}}>
 
-  <div class="person firstName">
+  <div class="five wide field">
     <strong>First Name:</strong>{{input type="text" value=model.firstName}}
   </div>
-  <div class="person lastName">
+  <div class="five wide field">
     <strong>Last Name:</strong>{{input type="text" value=model.lastName}}
   </div>
-  <div class="person address">
+  <div class="eight wide field">
     <strong>Address:</strong>{{input type="text" value= model.address}}
   </div>
-  <div class="person job">
+  <div class="eight wide field">
     <strong>Job:</strong>{{drop-down  model=model  jobs=jobs}}
   </div>
   <div>
-    <button type="submit">Create</button>
+    <button class="ui button" type="submit">Create</button>
   </div>
 </form>

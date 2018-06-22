@@ -1,1 +1,4 @@
 /blueprints/*/files/**/*.js
+function() {
+    return path.resolve(process.cwd(), 'app/services/permissions-data.js');
+  }

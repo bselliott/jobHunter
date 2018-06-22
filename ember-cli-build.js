@@ -1,6 +1,6 @@
 'use strict';
 
-const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+const EmberApp = require('ember-cli/lib/broccoli/ember-app', 'apps-core-ui/config/semantic-ui');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {

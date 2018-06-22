@@ -1,14 +1,5 @@
 {{#each model as |person|}}
   {{people-list-details person=person}}
 {{/each}}
-
-{{#people-filter
-  filter =(action "filterByfirst_name")
-  as |flteredResults|}}
-  <ul class="results">
-    {{#each filteredResults as |person|}}
-      <li>{{people-list-details person=person}}</li>
-    {{/each}}
-  </ul>
-{{/people-filter}}
 {{outlet}}
+
