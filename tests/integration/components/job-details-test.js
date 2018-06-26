@@ -10,12 +10,12 @@ module('Integration | Component | job-details', function(hooks) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`{{job-details}}`);
+    await render(hbs `{{job-details}}`);
 
     assert.equal(this.element.textContent.trim(), '');
 
     // Template block usage:
-    await render(hbs`
+    await render(hbs `
       {{#job-details}}
         template block text
       {{/job-details}}

@@ -1,5 +1,5 @@
 {{#each personList as |row|}}
-  <div><input class="ui checkbox" type="checkbox" id="{{row.person.id}}" onchange={{action "makeSelection" row}} checked="{{if row.selected 'checked' ''}}">
+  <div><input class="ui checkbox" type="checkbox" id="{{row.person.firstName}}" onchange={{action "makeSelection" row}} checked="{{if row.selected 'checked' ''}}">
     <input disabled type=" label" id="{{row.person.firstName}}" value="{{row.person.firstName}} {{row.person.lastName}}">
   </div>
 {{/each}}

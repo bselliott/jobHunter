@@ -1,6 +1,6 @@
-<select class="ui dropdown" onchange={{action "setSelection" value="target.value"}}>
+<select class="ui dropdown" onchange={{action "setSelection" value="target.value"}} id="select">
   <option disable selected > --Select your Job -- </option>
   {{#each jobs as |jobChoice|}}
-      <option value={{jobChoice.id}}>{{jobChoice.jobTitle}}, {{jobChoice.companyName}}</option>
+    <option value={{jobChoice.id}} id="{{jobChoice.jobTitle}}">{{jobChoice.jobTitle}}, {{jobChoice.companyName}}</option>
   {{/each}}
 </select>

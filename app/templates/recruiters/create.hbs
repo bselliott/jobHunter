@@ -1,18 +1,18 @@
 <form class="ui form" {{action "createRecruiter" on="submit"}}>
 
   <div class="five wide field">
-    <strong>First name:</strong>{{input type="text" value=model.firstName}}
+    <strong>First name:</strong>{{input type="text" value=model.firstName id='first-name'}}
   </div>
   <div class="five wide field">
-    <strong>Last name:</strong>{{input type="text" value=model.lastName}}
+    <strong>Last name:</strong>{{input type="text" value=model.lastName id='last-name'}}
   </div>
   <div class="eight wide field">
-    <strong>Address:</strong>{{input type="text" value=model.address}}
+    <strong>Address:</strong>{{input type="text" value=model.address id='address'}}
   </div>
   <div class= "eight wide field">
-    <strong>Person:</strong>{{person-drop-down model=model person=person action1=(action "makeSelection" selected=selected) personList=personList}}
+    <strong>Person:</strong>{{person-drop-down model=model person=person action1=(action "makeSelection" selected=selected) personList=personList id='person-drop-down'}}
   </div>
   <div>
-    <button class="ui button" type="submit">Create</button>
+    <button class="ui button" type="submit" id="submit">Create</button>
   </div>
 </form>

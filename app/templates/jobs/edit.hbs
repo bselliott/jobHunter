@@ -5,23 +5,23 @@
   </div>
   <form {{action "updateJob" on="submit"}}>
    <div class="five wide field">
-    <strong>Job type:</strong>{{input type="text" vlaue=model.jobType}}
+    <strong>Job type:</strong>{{input type="text" vlaue=model.jobType id='job-type'}}
   </div>
   <div class="five wide field">
-    <strong>Job title</strong>{{input type="text" value =model.jobTitle}}
+    <strong>Job title</strong>{{input type="text" value =model.jobTitle id='job-title'}}
   </div>
   <div class="eight wide field">
-    <strong>Company name:</strong>{{input type="text" value = model.companyName}}
+    <strong>Company name:</strong>{{input type="text" value = model.companyName id='company-name'}}
   </div>
   <div class="eight wide field">
-    <strong>Company address:</strong>{{input type="text" value=model.companyAddress}}
+    <strong>Company address:</strong>{{input type="text" value=model.companyAddress id='company-address'}}
   </div>
   <div class="five wide field">
-    <strong>Job description:</strong>{{input type="text" value=model.jobDescription}}
+    <strong>Job description:</strong>{{input type="text" value=model.jobDescription id='job-description'}}
   </div>
   <div>
-    <button class="ui button" type="submit">Update</button>
-    <button class="ui button" onclick={{action "deleteJob"}}>Delete</button>
+    <button class="ui button" type="submit" id="submit">Update</button>
+    <button class="ui button" onclick={{action "deleteJob"}} id="delete">Delete</button>
   </div>
 </form>
 </div>
