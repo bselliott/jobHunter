@@ -28,11 +28,11 @@ module('Acceptance | update', function(hooks) {
     });
   });
 
-  test('Updating a candidate', async function(assert) {
-    await visit('/person-list/1/');
-    await fillIn('#address', 'nope');
+  test('Updating a person', async function(assert) {
+    await visit('/people-list/1/');
+    await fillIn('#lastName', 'nope');
     await click('#submit');
-    assert.equal(currentURL(), '/person-list');
+    assert.equal(currentURL(), '/people-list');
   });
 
   test('Update a job', async function(assert) {
