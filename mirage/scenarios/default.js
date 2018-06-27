@@ -6,4 +6,6 @@ export default function( server ) {
   */
 
    server.createList('people', 10);
+   server.createList('jobs', 10);
+   server.createList('recruiters', 10);
 }
