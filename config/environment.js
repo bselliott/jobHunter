@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    'ember-cli-mirage': {enabled: true},
+    'ember-cli-mirage': {enabled: false},
     modulePrefix: 'job-hunter',
     host: 'http://localhost.imtapps.com',
     environment,

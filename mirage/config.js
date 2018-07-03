@@ -10,21 +10,23 @@ export default function() {
   });
    this.namespace = 'api';
 
-  this.get('http://localhost.imtapps.com/api/people');
-  this.get('http://localhost.imtapps.com/api/people/:id');
-  this.delete('http://localhost.imtapps.com/api/people/:id');
-  this.patch('http://localhost.imtapps.com/api/people/:id');
-  this.post('http://localhost.imtapps.com/api/people');
+  this.get('http://localhost.imtapps.com:/api/people');
+  this.get('http://localhost.imtapps.com:/api/people/:id');
+  this.delete('http://localhost.imtapps.com:/api/people/:id');
+  this.patch('http://localhost.imtapps.com:/api/people/:id');
+  this.post('http://localhost.imtapps.com:/api/people');
 
-  this.get('http://localhost.imtapps.com/api/jobs');
-  this.delete('http://localhost.imtapps.com/api/jobs/:id');
-  this.post('http://localhost.imtapps.com/api/jobs');
-  this.get('http://localhost.imtapps.com/api/jobs/:id');
-  this.patch('http://localhost.imtapps.com/api/jobs/:id');
+  this.get('http://localhost.imtapps.com:/api/jobs');
+  this.delete('http://localhost.imtapps.com:/api/jobs/:id');
+  this.post('http://localhost.imtapps.com:/api/jobs');
+  this.get('http://localhost.imtapps.com:/api/jobs/:id');
+  this.patch('http://localhost.imtapps.com:/api/jobs/:id');
 
-  this.get('http://localhost.imtapps.com/api/recruiters');
-  this.post('http://localhost.imtapps.com/api/recruiters');
-  this.patch('http://localhost.imtapps.com/api/recruiters/:id');
-  this.get('http://localhost.imtapps.com/api/recruiters/:id');
-  this.delete('http://localhost.imtapps.com/api/recruiters/:id');
+  this.get('http://localhost.imtapps.com:/api/recruiters');
+  this.post('http://localhost.imtapps.com:/api/recruiters');
+  this.patch('http://localhost.imtapps.com:/api/recruiters/:id');
+  this.get('http://localhost.imtapps.com:/api/recruiters/:id');
+  this.delete('http://localhost.imtapps.com:/api/recruiters/:id');
+
+  this.get('http://localhost.imtapps.com:/api/reports');
 }

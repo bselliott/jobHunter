@@ -1,0 +1,32 @@
+<div class="ui three item menu">
+  <a class="item" id="job-tab" {{action 'showJobs'}} data-tab="jobs">Jobs</a>
+  <a class="item" id="person-tab" {{action 'showPeople'}} data-tab="people">People</a>
+  <a class="item" id="recruiter-tab" {{action 'showRecruiters'}} data-tab="recruiters">Recruiters</a>
+</div>
+
+{{#if jobs}}
+  <div class="ui bottom attached tab" data-tab="jobs">
+    <h2 class="job">Available Jobs</h2>
+    {{#each model.jobs as |aJob|}}
+      {{job-details job=aJob}}
+    {{/each}}
+  </div>
+{{/if}}
+
+{{#if people}}
+  <div class="ui bottom attached tab" data-tab="people">
+    <h2 class="person">Available People</h2>
+    {{#each model.people as |aPerson|}}
+      {{people-list-details person=aPerson}}
+      {{/each}}
+  </div>
+{{/if}}
+
+{{#if recruiters}}
+ <div class="ui bottom attached tab" data-tab="recruiters">
+   <h2 class="recruiters">Available Recruiters</h2>
+   {{#each model.recruiters as |aRecruiter|}}
+     {{recruiter-details recruiter=aRecruiter}}
+   {{/each}}
+ </div>
+{{/if}}

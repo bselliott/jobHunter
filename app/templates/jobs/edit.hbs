@@ -1,14 +1,14 @@
 <div class="ui form">
-
   <div class="eight wide field">
     <h2 class="ui block header">{{model.jobTitle}}</h2>
   </div>
+
   <form {{action "updateJob" on="submit"}}>
    <div class="five wide field">
-    <strong>Job type:</strong>{{input type="text" vlaue=model.jobType id='job-type'}}
+    <strong>Job title:</strong>{{input type="text" vlaue=model.jobTitle id='job-title'}}
   </div>
   <div class="five wide field">
-    <strong>Job title</strong>{{input type="text" value =model.jobTitle id='job-title'}}
+    <strong>Job type</strong>{{input type="text" value =model.jobType id='job-type'}}
   </div>
   <div class="eight wide field">
     <strong>Company name:</strong>{{input type="text" value = model.companyName id='company-name'}}

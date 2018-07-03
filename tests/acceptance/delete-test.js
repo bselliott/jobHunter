@@ -35,13 +35,13 @@ module('Acceptance | delete', function(hooks) {
   });
 
 test('deleting a job', async function(assert) {
-  await visit('/jobs/1/edit');
+  await visit('/jobs/edit/1');
   await click('#delete');
   assert.equal(currentURL(), '/jobs');
 });
 
 test('deleting a recruiter', async function(assert) {
-  await visit('/recruiters/1/edit');
+  await visit('/recruiters/edit/1');
   await click('#delete');
   assert.equal(currentURL(), '/recruiters');
 });

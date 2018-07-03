@@ -13,13 +13,14 @@ Router.map(function() {
   });
   this.route('jobs', function() {
     this.route('create');
-    this.route('view', {path: ':id/view'});
-    this.route('edit', {path: ':id/edit'});
+    this.route('view', {path: 'view/:id'});
+    this.route('edit', {path: 'edit/:id'});
   });
   this.route('recruiters', function() {
     this.route('create');
-    this.route('edit', {path: ':id/edit'});
+    this.route('edit', {path: 'edit/:id'});
   });
+  this.route('reports');
 });
 
 export default Router;

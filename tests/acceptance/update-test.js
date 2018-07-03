@@ -29,21 +29,21 @@ module('Acceptance | update', function(hooks) {
   });
 
   test('Updating a person', async function(assert) {
-    await visit('/people-list/1/');
-    await fillIn('#lastName', 'nope');
+    await visit('/people-list/1');
+    await fillIn('#last-name', 'nope');
     await click('#submit');
     assert.equal(currentURL(), '/people-list');
   });
 
   test('Update a job', async function(assert) {
-    await visit('jobs/1/edit');
+    await visit('jobs/edit/1');
     await fillIn('#job-title', 'programming intern');
     await click('#submit');
     assert.equal(currentURL(), '/jobs');
   });
 
   test('Updating a recruiter', async function(assert) {
-    await visit('/recruiters/1/edit');
+    await visit('/recruiters/edit/1');
     await fillIn('#last-name', 'ricky');
     await click('#submit');
     assert.equal(currentURL(), '/recruiters');
