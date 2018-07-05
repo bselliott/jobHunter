@@ -10,7 +10,7 @@
     <strong>Address:</strong>{{input type="text" value=model.address id='address'}}
   </div>
   <div class= "eight wide field">
-    <strong>Person:</strong>{{person-drop-down model=model person=person action1=(action "makeSelection" selected=selected) personList=personList id='person-drop-down'}}
+    <strong>Person:</strong>{{person-drop-down model=model person=person action1=(action "makeSelection" selected=selected) selected=selected  personList=personList id='person-drop-down'}}
   </div>
   <div>
     <button class="ui button" type="submit" id="submit">Create</button>

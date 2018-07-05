@@ -62,5 +62,4 @@ module('Acceptance | reports', function(hooks) {
     assert.ok(this.element.querySelector('a').textContent);
   });
 
-
 });

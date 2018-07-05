@@ -1,5 +1,5 @@
 export default function() {
-  this.get('https://auth2test.imtapps.com/api/user/details/', () => {
+  this.get('https://authtest.imtapps.com/api/user/details/', () => {
     // eslint-disable-next-line max-len
     return '{"status": "OK", "agency": {"agency_name": "", "agency_code": "", "agency_id": ""}, "user": {"username": "wes.stclair", "is_superuser": false, "first_name": "Wes", "last_name": "St. Clair", "is_staff": false, "company": 1, "agency": "", "is_active": true, "email": "wes.stclair@imtapps.com"}}';
    });
@@ -10,23 +10,23 @@ export default function() {
   });
    this.namespace = 'api';
 
-  this.get('http://localhost.imtapps.com:/api/people');
-  this.get('http://localhost.imtapps.com:/api/people/:id');
-  this.delete('http://localhost.imtapps.com:/api/people/:id');
-  this.patch('http://localhost.imtapps.com:/api/people/:id');
-  this.post('http://localhost.imtapps.com:/api/people');
+  this.get('http://localhost.imtapps.com:8000/api/people');
+  this.get('http://localhost.imtapps.com:8000/api/people/:id');
+  this.delete('http://localhost.imtapps.com:8000/api/people/:id');
+  this.patch('http://localhost.imtapps.com:8000/api/people/:id');
+  this.post('http://localhost.imtapps.com:8000/api/people');
 
-  this.get('http://localhost.imtapps.com:/api/jobs');
-  this.delete('http://localhost.imtapps.com:/api/jobs/:id');
-  this.post('http://localhost.imtapps.com:/api/jobs');
-  this.get('http://localhost.imtapps.com:/api/jobs/:id');
-  this.patch('http://localhost.imtapps.com:/api/jobs/:id');
+  this.get('http://localhost.imtapps.com:8000/api/jobs');
+  this.delete('http://localhost.imtapps.com:8000/api/jobs/:id');
+  this.post('http://localhost.imtapps.com:8000/api/jobs');
+  this.get('http://localhost.imtapps.com:8000/api/jobs/:id');
+  this.patch('http://localhost.imtapps.com:8000/api/jobs/:id');
 
-  this.get('http://localhost.imtapps.com:/api/recruiters');
-  this.post('http://localhost.imtapps.com:/api/recruiters');
-  this.patch('http://localhost.imtapps.com:/api/recruiters/:id');
-  this.get('http://localhost.imtapps.com:/api/recruiters/:id');
-  this.delete('http://localhost.imtapps.com:/api/recruiters/:id');
+  this.get('http://localhost.imtapps.com:8000/api/recruiters');
+  this.post('http://localhost.imtapps.com:8000/api/recruiters');
+  this.patch('http://localhost.imtapps.com:8000/api/recruiters/:id');
+  this.get('http://localhost.imtapps.com:8000/api/recruiters/:id');
+  this.delete('http://localhost.imtapps.com:8000/api/recruiters/:id');
 
-  this.get('http://localhost.imtapps.com:/api/reports');
+  this.get('http://localhost.imtapps.com:8000/api/reports');
 }
